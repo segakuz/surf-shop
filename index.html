@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="utf-8" />
+  <title>Surf-Shop</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="shortcut icon" href="images/icon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:italic|Raleway:400,600,700|Roboto+Condensed:700" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <meta name="description" content="Сайт, посвященный серфингу. Магазин досок и аксессуаров для серфинга." />
+  <meta name="keywords" content="серфинг, surf-shop" />
+  <meta name="author" content="Sergei Kuznetsov" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <header>
+    <div class="center">
+      <div id="logo">Surf-Shop</div>
+      <nav>
+        <a href="#surfboards">Доски</a>
+        <a href="#about">О нас</a>
+        <a href="#team">Команда</a>
+        <a href="#updates">Блог</a>
+      </nav>
+      <div id="social">
+        <a href="https://www.facebook.com/surfer/"><img src="images/Facebook.png" alt="Facebook icon" /></a>
+        <a href="https://www.instagram.com/explore/tags/surf/?hl=ru"><img src="images/Instagram.png" alt="Instagram icon" /></a>
+        <a href="mailto:surf-web@surfers.com"><img src="images/Mail.png" alt="Mail icon" /></a>
+      </div>
+    </div>
+    <div id="slogan">
+      <p>Катайся на каждой волне так, как будто она последняя</p>
+      <p>Мы любим движение океана</p>
+    </div> 
+  </header>
+  <div id="surfboards">
+    <h1 id="boards">Доски</h1>
+    <a id="previous" onclick="prevSlide()"><img src="images/Previous.png"></a>
+    <span id="counter">1/5</span>
+    <a id="next" onclick="nextSlide()"><img src="images/Next.png"></a><br />
+    <div class="slide1 slide-show">
+      <img src="images/board1_1.png" alt="Доска для серфинга Softboard 900, 7'" class="board" />
+      <div class="thumbs">
+        <img onclick="changeBoardImage(this)" class="img-tab img-tab-active" src="images/board1_1.png" alt="Доска для серфинга Softboard 900, 7'" />
+        <img onclick="changeBoardImage(this)" class="img-tab" src="images/board1_2.png" alt="Доска для серфинга Softboard 900, 7'" />
+        <img onclick="changeBoardImage(this)" class="img-tab" src="images/board1_3.png" alt="Доска для серфинга Softboard 900, 7'" />
+        <img onclick="changeBoardImage(this)" class="img-tab" src="images/board1_4.png" alt="Доска для серфинга Softboard 900, 7'" />
+      </div>
+      <div class="side">
+        <h2>Доска для серфинга Softboard 900, 7'</h2>
+        <div class="raiting">
+          <img src="images/Star 1.png" alt="raiting star" />
+          <img src="images/Star 1.png" alt="raiting star" />
+          <img src="images/Star 1.png" alt="raiting star" />
+          <img src="images/Star 1.png" alt="raiting star" />
+          <img src="images/Star 5.png" alt="raiting star" />
+          <span>(38)</span>
+        </div>
+        <div class="tabs">
+          <a onclick="changeTab(this, 'description')" class="active">Описание</a>
+          <a onclick="changeTab(this, 'features')">Характеристики</a>
+          <a onclick="changeTab(this, 'dimentions')">Размеры</a>
+        </div>
+        <div class="tab-content">
+          <p class="description tab-content-show">Для регулярных занятий серфингом в волнах высотой до 1,5 м.</p>
+          <p class="description tab-content-show">При небольшой длине в 7' эта доска для серфинга обладает достаточным объемом для комфорта и безопасности использования почти в любых волнах. В комплекте 3 плавника с нережущими кромками.</p>
+          <p class="features">Округлая форма хвоста round tail.</p>
+          <p class="features">Сердечник из полистирола с 2 деревянными стрингерами. Покрытие из высококачественного полиэтилена. Нижняя часть из полиэтилена высокой плотности с решетчатой структурой. 3 направляющих для плавников типа FCS.</p>
+          <p class="features">Для серферов экспертного уровня весом до 85 кг.</p>
+          <p class="dimentions">Объем: 60 л</p>
+          <p class="dimentions">Вес: 5 кг</p>
+          <p class="dimentions">Размеры ("): 7' х 22" 5/8 х 3" 5/8</p>
+          <p class="dimentions">Размеры (см): 215 х 58,7 х 9</p>
+        </div>
+        <div class="price">14 990 руб.</div>
+        <a href="https://www.decathlon.ru/doska-softboard-900-7_e1-id_8486087.html" class="buynowbutton">Купить</a>
+      </div>
+    </div>
+    <div class="slide2">
+      <img src="images/board2_1.png" alt="Доска для серфинга Softboard 100 7'" class="board" />
+      <div class="thumbs">
+        <img onclick="changeBoardImage(this)" class="img-tab img-tab-active" src="images/board2_1.png" alt="Доска для серфинга Softboard 100 7'" />
+        <img onclick="changeBoardImage(this)" class="img-tab" src="images/board2_2.png" alt="Доска для серфинга Softboard 100 7'" />
+        <img onclick="changeBoardImage(this)" class="img-tab" src="images/board2_3.png" alt="Доска для серфинга Softboard 100 7'" />
+        <img onclick="changeBoardImage(this)" class="img-tab" src="images/board2_4.png" alt="Доска для серфинга Softboard 100 7'" />
+      </div>
+      <div class="side">
+        <h2>Доска для серфинга Softboard 100 7'</h2>
+        <div class="raiting">
+          <img src="images/Star 1.png" alt="raiting star" />
+          <img src="images/Star 1.png" alt="raiting star" />
+          <img src="images/Star 1.png" alt="raiting star" />
+          <img src="images/Star 1.png" alt="raiting star" />
+          <img src="images/Star 5.png" alt="raiting star" />
+          <span>(45)</span>
+        </div>
+        <div class="tabs">
+          <a onclick="changeTab(this, 'description')" class="active">Описание</a>
+          <a onclick="changeTab(this, 'features')">Характеристики</a>
+          <a onclick="changeTab(this, 'dimentions')">Размеры</a>
+        </div>
+        <div class="tab-content">
+          <p class="description tab-content-show">Для юных серферов весом до 40 кг и начала занятий серфингом в небольших прибрежных волнах.</p>
+          <p class="description tab-content-show">Новая доска для серфинга 7' имеет специальную адаптированную для обучения форму. Идеальна для безопасного обучения благодаря пеноматериалу и нережущим плавникам.</p>
+          <p class="features">3 плавника с безопасными нережущими кромками, округлый хвост round tail.</p>
+          <p class="features">Сердечник из пенополистирола. 2 деревянных стрингера. Верхнее покрытие из полиэтилена. Подошва из полиэтилена высокой плотности ПЭВП.</p>
+          <p class="dimentions">Объем: 55 л</p>
+          <p class="dimentions">Вес: 4 кг</p>
+          <p class="dimentions">Размеры ("): 7' х 22" 7/17 х 3" 3/8</p>
+          <p class="dimentions">Размеры (см): 214 х 57,5 х 8,6</p>
+        </div>
+        <div class="price">8 990 руб.</div>
+        <a href="https://www.decathlon.ru/doska-softboard-100-7_e1-id_8485950.html" class="buynowbutton">Купить</a>
+      </div>
+    </div>
+    <div class="slide3">
+      <img src="images/board3_1.png" alt="Доска для серфинга Softboard 900 6'" class="board" />
+      <div class="thumbs">
+        <img onclick="changeBoardImage(this)" class="img-tab img-tab-active" src="images/board3_1.png" alt="Доска для серфинга Softboard 900 6'" />
+        <img onclick="changeBoardImage(this)" class="img-tab" src="images/board3_2.png" alt="Доска для серфинга Softboard 900 6'" />
+        <img onclick="changeBoardImage(this)" class="img-tab" src="images/board3_3.png" alt="Доска для серфинга Softboard 900 6'" />
+        <img onclick="changeBoardImage(this)" class="img-tab" src="images/board3_4.png" alt="Доска для серфинга Softboard 900 6'" />
+      </div>
+      <div class="side">
+        <h2>Доска для серфинга Softboard 900 6'</h2>
+        <div class="raiting">
+          <img src="images/Star 1.png" alt="raiting star" />
+          <img src="images/Star 1.png" alt="raiting star" />
+          <img src="images/Star 1.png" alt="raiting star" />
+          <img src="images/Star 5.png" alt="raiting star" />
+          <img src="images/Star 5.png" alt="raiting star" />
+          <span>(31)</span>
+        </div>
+        <div class="tabs">
+          <a onclick="changeTab(this, 'description')" class="active">Описание</a>
+          <a onclick="changeTab(this, 'features')">Характеристики</a>
+          <a onclick="changeTab(this, 'dimentions')">Размеры</a>
+        </div>
+        <div class="tab-content">
+          <p class="description tab-content-show">Короткая доска для серферов уровня "эксперт".</p>
+          <p class="description tab-content-show">Доска для серфинга из высококачественного пеноматериала - идеальный вариант для занятий серфингом при большом скоплении людей в воде. В комплекте 3 плавника с мягкими кромками.</p>
+          <p class="features">Шейп 6' c 3-мя плавниками.</p>
+          <p class="features">Сердечник из полистирола с 2 деревянными стрингерами. Покрытие из высококачественного полиэтилена. Нижняя часть из полиэтилена высокой плотности с решетчатой структурой. 5 направляющих для плавников типа FCS.</p>
+          <p class="dimentions">Объем: 46 л</p>
+          <p class="dimentions">Вес: 4 кг</p>
+          <p class="dimentions">Размеры ("): 6' х 21" 1/8 х 3" 3/8</p>
+          <p class="dimentions">Размеры (см): 184 х 54,8 х 8,5</p>
+        </div>
+        <div class="price">13 990 руб.</div>
+        <a href="https://www.decathlon.ru/doska-softboard-900-6_e1-id_8486086.html" class="buynowbutton">Купить</a>
+      </div>
+    </div>
+    <div class="slide4">
+      <img src="images/board4_1.png" alt="Доска для серфинга Softboard 100 8'6''" class="board" />
+      <div class="thumbs">
+        <img onclick="changeBoardImage(this)" class="img-tab img-tab-active" src="images/board4_1.png" alt="Доска для серфинга Softboard 100 8'6''" />
+        <img onclick="changeBoardImage(this)" class="img-tab" src="images/board4_2.png" alt="Доска для серфинга Softboard 100 8'6''" />
+        <img onclick="changeBoardImage(this)" class="img-tab" src="images/board4_3.png" alt="Доска для серфинга Softboard 100 8'6''" />
+        <img onclick="changeBoardImage(this)" class="img-tab" src="images/board4_4.png" alt="Доска для серфинга Softboard 100 8'6''" />
+      </div>
+      <div class="side">
+        <h2>Доска для серфинга Softboard 100 8'6''</h2>
+        <div class="raiting">
+          <img src="images/Star 1.png" alt="raiting star" />
+          <img src="images/Star 1.png" alt="raiting star" />
+          <img src="images/Star 1.png" alt="raiting star" />
+          <img src="images/Star 1.png" alt="raiting star" />
+          <img src="images/Star 5.png" alt="raiting star" />
+          <span>(83)</span>
+        </div>
+        <div class="tabs">
+          <a onclick="changeTab(this, 'description')" class="active">Описание</a>
+          <a onclick="changeTab(this, 'features')">Характеристики</a>
+          <a onclick="changeTab(this, 'dimentions')">Размеры</a>
+        </div>
+        <div class="tab-content">
+          <p class="description tab-content-show">Для начинающих серферов весом до 85 кг или опытных серферов весом до 95 кг.</p>
+          <p class="description tab-content-show">Идеальная доска для безопасного обучения и совершенствования навыков. В комплект входят лиш и 3 плавника. Нанесите ваксу для лучшего сцепления.</p>
+          <p class="features">Эксклюзивный дизайн от Джереми Смита (Андай): круглый хвост, вогнутый спереди.</p>
+          <p class="features">3 деревянные рейки изнутри для больших размеров. Усиливающий слой с нижней стороны. Разъем для лиша отделен от разъемов для плавниковых винтов.</p>
+          <p class="features">Верх из пеноматериала.</p>
+          <p class="dimentions">Объем: 90 л</p>
+          <p class="dimentions">Вес: 6,7 кг</p>
+          <p class="dimentions">Размеры ("): 8'6" х 23,3" х 4,2"</p>
+          <p class="dimentions">Размеры (см): 258 х 59,2 х 10,6</p>
+        </div>
+        <div class="price">11 990 руб.</div>
+        <a href="https://www.decathlon.ru/doska-dl-serfinga-100-86-_e1-id_8485990.html" class="buynowbutton">Купить</a>
+      </div>
+    </div>
+    <div class="slide5">
+      <img src="images/board5_1.png" alt="Доска для серфинга Softboard 900, 5'4''" class="board" />
+      <div class="thumbs">
+        <img onclick="changeBoardImage(this)" class="img-tab img-tab-active" src="images/board5_1.png" alt="Доска для серфинга Softboard 900, 5'4''" />
+        <img onclick="changeBoardImage(this)" class="img-tab" src="images/board5_2.png" alt="Доска для серфинга Softboard 900, 5'4''" />
+        <img onclick="changeBoardImage(this)" class="img-tab" src="images/board5_3.png" alt="Доска для серфинга Softboard 900, 5'4''" />
+        <img onclick="changeBoardImage(this)" class="img-tab" src="images/board5_4.png" alt="Доска для серфинга Softboard 900, 5'4''" />
+      </div>
+      <div class="side">
+        <h2>Доска для серфинга Softboard 900, 5'4''</h2>
+        <div class="raiting">
+          <img src="images/Star 1.png" alt="raiting star" />
+          <img src="images/Star 1.png" alt="raiting star" />
+          <img src="images/Star 1.png" alt="raiting star" />
+          <img src="images/Star 1.png" alt="raiting star" />
+          <img src="images/Star 1.png" alt="raiting star" />
+          <span>(37)</span>
+        </div>
+        <div class="tabs">
+          <a onclick="changeTab(this, 'description')" class="active">Описание</a>
+          <a onclick="changeTab(this, 'features')">Характеристики</a>
+          <a onclick="changeTab(this, 'dimentions')">Размеры</a>
+        </div>
+        <div class="tab-content">
+          <p class="description tab-content-show">Для серферов уровня "эксперт", катающихся на небольших волнах.</p>
+          <p class="description tab-content-show">Маневренная доска, которая быстро реагирует на движения и позволит выполнять разные фигуры без риска получить травму при контакте с доской.Высококачественный пеноматериал. Плавники с гибкими кромками.</p>
+          <p class="features">Короткая доска формы twin с 2 плавниками 5"5.</p>
+          <p class="features">Сердечник из полистирола с 2 деревянными стрингерами. Покрытие из высококачественного полиэтилена. Нижняя часть из полиэтилена высокой плотности с решетчатой структурой. 2 направляющих для плавников типа FCS.</p>
+          <p class="dimentions">Объем: 44 л</p>
+          <p class="dimentions">Вес: 3,8 кг</p>
+          <p class="dimentions">Размеры ("): 5'4" х 22" 1/2 х 3 1/4</p>
+          <p class="dimentions">Размеры (см): 164 х 58,2 х 8,2</p>
+        </div>
+        <div class="price">12 990 руб.</div>
+        <a href="https://www.decathlon.ru/doska-softboard-900-54_e1-id_8486085.html" class="buynowbutton">Купить</a>
+      </div>
+    </div>
+  </div>
+  <div id="about">
+    <h1>О нас</h1>
+    <h2 id="title">Мы Surf-Shop<br />X</h2>
+    <p id="text">Мы единственная в России компания профессионально и комплексно работающая в индустрии серфинга. Мы обладаем многолетним успешным опытом, нашими партнерами являются известные мировые компании, наша команда - это исключительно профессионалы в области серфинга.</p>
+    <div id="video" onmouseover="showCircle()" onmouseout="hideCircle()">
+      <div class="ratio">
+        <div class="ratio-content">
+          <iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/B0i_ryWN3UU?autoplay=1&start=8&end=777&loop=1&playlist=B0i_ryWN3UU&mute=1&controls=0&disablekb=1&fs=0&hl=ru&modestbranding=1&color=white" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+          <div class="video-poster" onclick="videoPlay();">
+            <button type="button" onclick="videoPlay()">
+              <img src="images/Circle.png" id="circle" />
+              <img src="images/Play icon.png" id="playicon" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="team">
+    <h1>Команда</h1>
+    <div class="cards">
+      <div class="tcard-odd" onmouseover="teamActive(this)" onmouseout="teamUsual(this)">
+        <img src="images/Photo (8).png" class="tphoto" alt="Виталик" style="border: 2px solid white; border-radius: 50%;" />
+        <p class="tname">Виталик</p>
+        <p class="tinst">@tajamos</p>
+        <img src="images/Waves (1).png" class="separator" alt="Waves icon" />
+        <p class="tloc"><i class="material-icons">place</i> Санкт-Петербург</p>
+      </div>
+      <div class="tcard-even" onmouseover="teamActive(this)" onmouseout="teamUsual(this)">
+        <img src="images/Photo (7).png" class="tphoto" alt="Маша" />
+        <p class="tname">Маша</p>
+        <p class="tinst">@maliamanuel</p>
+        <img src="images/Waves (1).png" class="separator" alt="Waves icon" />
+        <p class="tloc"><i class="material-icons">place</i> Владивосток</p>
+      </div>
+      <div id="sep">_</div>
+      <div class="tcard-odd" onmouseover="teamActive(this)" onmouseout="teamUsual(this)">
+        <img src="images/Photo (9).png" class="tphoto" alt="Игорь" style="border: 2px solid white; border-radius: 50%;" />
+        <p class="tname">Игорь</p>
+        <p class="tinst">@ian.walshov</p>
+        <img src="images/Waves (1).png" class="separator" alt="Waves icon" />
+        <p class="tloc"><i class="material-icons">place</i> Сочи</p>
+      </div>
+      <div class="tcard-even" onmouseover="teamActive(this)" onmouseout="teamUsual(this)">
+        <img src="images/Photo (10).png" class="tphoto" alt="Macy Callaghan" style="border: 2px solid white; border-radius: 50%;" />
+        <p class="tname">Женя</p>
+        <p class="tinst">@janecallaghan</p>
+        <img src="images/Waves (1).png" class="separator" alt="Waves icon" />
+        <p class="tloc"><i class="material-icons">place</i> Санкт-Петербург</p>
+      </div>
+    </div>
+  </section>
+  <section id="updates">
+    <h2 id="upd">Последние новости<br />X</h2>
+    <div id="blog">
+      <div class="upd-card" onmouseover="blogHover(this)" onmouseout="blogUsual(this)" onclick="location.href = 'https://www.surfbali.ru/news/den-okeana'">
+        <div class="dark"></div>
+        <img src="images/blog1.png" alt="Blog photo 1" class="blog-img" alt="Surfers on the beach"/>
+        <p class="blog-post">День океана. Как отпраздновали его знаменитые серферы?</p>
+      </div>
+      <div class="upd-card" onmouseover="blogHover(this)" onmouseout="blogUsual(this)" onclick="location.href = 'https://www.surfbali.ru/news/novosti-filipe-toledo-vyigryvaet-j-bay'">
+        <div class="dark"></div>
+        <img src="images/blog2.png" alt="Blog photo 2" class="blog-img" alt="Wawe photo" />
+        <p class="blog-post">Филипэ Толедо стал чемпионом по серфингу в J-Bay</p>
+      </div>
+      <div class="upd-card" onmouseover="blogHover(this)" onmouseout="blogUsual(this)" onclick="location.href = 'https://www.surfbali.ru/interview/chempionat-isa-wsg-otchet-iriny-kosobukinoj'">
+        <div class="dark"></div>
+        <img src="images/blog3.png" alt="Blog photo 3" class="blog-img" alt="Drying surfboards" />
+        <p class="blog-post">Русские серферы на чемпионате ISA WSG. Отчет Ирины Кособукиной</p>
+      </div>
+    </div>
+    <a href="https://www.surfbali.ru/category/news" target="_blank">Все новости</a>
+  </section>
+  <div id="instface">
+    <section id="instagram">
+      <img id="inst-sect-img" src="images/Instagram%20(1).png" alt="Instagram word" />
+      <div id="inst-photos">
+        <img src="images/Photo%20(17).png" alt="Instagram photo 1" />
+        <img src="images/Photo%20(14).png" alt="Instagram photo 2" />
+        <img src="images/Photo%20(15).png" alt="Instagram photo 3" />
+        <img src="images/Photo%20(16).png" alt="Instagram photo 4" />
+      </div>
+      <p>
+        <a href="https://www.instagram.com/explore/tags/surf/?hl=ru">
+          <img src="images/Logo%20Instagram.png" alt="Instagram icon" />
+          <span>Следите за нами</span>
+        </a>
+        <span>@surf-shop</span>
+      </p>
+    </section>
+    <section id="facebook">
+      <div class="facebook-container">
+        <img id="fl" src="images/Logo%20Facebook.png" alt="Facebook logo"/>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsurfer&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <nav id="ll1">
+      <a href="#surfboards">
+        <img src="images/Waves%20col%201.png" alt="Waves icon" />
+        Доски
+      </a>
+      <a href="#about">
+        <img src="images/Waves%20col%201.png" alt="Waves icon" />
+        О нас
+      </a>
+    </nav>
+    <nav id="ll2">
+      <a href="#team">
+        <img src="images/Waves%20col%201.png" alt="Waves icon" />
+        Команда
+      </a>
+      <a href="#updates">
+        <img src="images/Waves%20col%201.png" alt="Waves icon" />
+        Блог
+      </a>
+    </nav>
+    <form>
+      <p>Подписаться</p>
+      <div>
+        <i class="material-icons">email</i>
+        <input type="email" name="email" placeholder="Ваш e-mail"/>
+        <a href="mailto:surf-web@surf-shop.com">
+          <i class="material-icons">arrow_forward</i>
+        </a>
+      </div>
+    </form>
+    <p id="cop">
+      © 2017 Surf-Shop
+    </p>
+  </footer>
+  <script src="myscript.js"></script>
+</body>
+</html>
