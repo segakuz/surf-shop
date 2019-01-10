@@ -684,7 +684,7 @@ iframe {
 
 #facebook {
   background-image: url(images/Bg.png);
-  width: 440px;
+  width: 420px;
   height: 314px;
   margin: auto;
   margin-top: 178px;
@@ -695,7 +695,7 @@ iframe {
 }
 
 .facebook-container {
-  padding: 31px calc(50% - 170px) 40px;
+  padding: 31px calc(50% - 160px) 40px;
   height: 100%;
 }
 
