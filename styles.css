@@ -219,7 +219,7 @@ h1 {
 
 .tabs a {
   display: inline-block;
-  margin-right: 9px;
+  margin-right: 5px;
   color: #a0a0a0;
   text-decoration: none;
   -webkit-transition: 0.5s;
@@ -663,7 +663,7 @@ iframe {
   font-weight: bold;
   text-transform: uppercase;
   color: #00b0ff;
-  margin-right: 8px;
+  margin-right: 5px;
 }
 
 #instagram a span {
@@ -672,7 +672,7 @@ iframe {
 }
 
 #instagram p img {
-  margin-right: 8px;
+  margin-right: 5px;
   font-size: 0;
   display: inline-block;
 }
