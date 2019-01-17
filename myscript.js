@@ -8,12 +8,12 @@ function hideCircle() {
 
 function teamActive(element) {
     element.classList.add("tcard-active"); 
-    element.children[3].src = "images/Waves.webp";
+    element.children[3].src = "images/Waves.png";
 }
 
 function teamUsual(element) {
     element.classList.remove("tcard-active"); 
-    element.children[3].src = "images/Waves (1).webp";
+    element.children[3].src = "images/Waves (1).png";
 }
 
 function blogHover(element) {
