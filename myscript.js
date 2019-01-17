@@ -1,11 +1,3 @@
-function showCircle() {
-    document.getElementById("circle").style.display = "block";
-}
-
-function hideCircle() {
-    document.getElementById("circle").style.display = "none";
-}
-
 function teamActive(element) {
     element.classList.add("tcard-active"); 
     element.children[3].src = "images/Waves.png";
@@ -71,9 +63,4 @@ function prevSlide() {
 		document.getElementById("counter").innerHTML = (parseInt(currentSlide) - 1) + "/5";
 		document.getElementsByClassName("slide" + ((parseInt(currentSlide) - 1)))[0].classList.add("slide-show");
 	}
-}
-
-function videoPlay() {
-	document.getElementsByClassName("video-poster")[0].style.display = "none";
-	// document.getElementsByClassName("ratio-content")[0].innerHTML = '<iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/B0i_ryWN3UU?autoplay=1&start=8&end=777&loop=1&playlist=B0i_ryWN3UU&mute=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;" frameborder="0" allowfullscreen></iframe>';
 }

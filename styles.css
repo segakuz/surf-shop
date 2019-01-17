@@ -403,44 +403,6 @@ iframe {
   height: 100%;
 }
 
-.video-poster {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  background-image: url("images/Photo (6).png");
-  background-size: cover;
-}
-
-#video button {
-  background-color: transparent;
-  border-style: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  cursor: pointer;
-}
-
-#video button img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-#circle {
-  display: none;
-}
-
 /* **********     TEAM     ******************************************************************************************** */
 
 #team {
@@ -691,7 +653,7 @@ iframe {
   text-align: center;
   background-position: center;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .facebook-container {
